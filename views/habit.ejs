@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker for Mental Health</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external stylesheet -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-image: url("C:/Users/prish/PycharmProjects/pythonProject1/Desktop/code4change/habit.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      header {
+        background-color: #1995ad; /* Blue */
+        color: #f1f1f2; /* White */
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #f1f1f2; /* Light Gray */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #1995ad; /* Blue */
+      }
+      .habit-entry h2 {
+        font-weight: bold;
+        color: #1995ad; /* Blue */
+      }
+      input[type="number"],
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #a1d6e2; /* Light Blue */
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-weight: bold;
+      }
+      button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #1995ad; /* Blue */
+        color: #f1f1f2; /* White */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button[type="submit"]:hover {
+        background-color: #0d3b66; /* Darker Blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <header>Health Companion</header>
+    <div class="container">
+      <h1>Habit Tracker for Mental Health</h1>
+      <form id="habitTrackerForm">
+        <div class="habit-entry">
+          <h2>Water Intake</h2>
+          <label for="waterIntake">Amount of Water (in liters):</label>
+          <input
+            type="number"
+            id="waterIntake"
+            name="waterIntake"
+            step="0.1"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Meditation Time Duration -->
+        <div class="habit-entry">
+          <h2>Meditation Time Duration</h2>
+          <label for="meditationDuration">Duration (in minutes):</label>
+          <input
+            type="number"
+            id="meditationDuration"
+            name="meditationDuration"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Number of Meals -->
+        <div class="habit-entry">
+          <h2>Number of Meals</h2>
+          <label for="numberOfMeals">Number of Meals:</label>
+          <input
+            type="number"
+            id="numberOfMeals"
+            name="numberOfMeals"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Meal Intake (Breakfast, Lunch, Dinner) -->
+        <div class="habit-entry">
+          <h2>Meal Intake</h2>
+          <label for="breakfastIntake">Breakfast:</label>
+          <textarea
+            id="breakfastIntake"
+            name="breakfastIntake"
+            rows="3"
+            required
+          ></textarea
+          ><br />
+          <label for="lunchIntake">Lunch:</label>
+          <textarea
+            id="lunchIntake"
+            name="lunchIntake"
+            rows="3"
+            required
+          ></textarea
+          ><br />
+          <label for="dinnerIntake">Dinner:</label>
+          <textarea
+            id="dinnerIntake"
+            name="dinnerIntake"
+            rows="3"
+            required
+          ></textarea
+          ><br />
+        </div>
+        <!-- Sleep Duration -->
+        <div class="habit-entry">
+          <h2>Sleep Duration</h2>
+          <label for="sleepDuration">Duration (in hours):</label>
+          <input
+            type="number"
+            id="sleepDuration"
+            name="sleepDuration"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Productivity Time -->
+        <div class="habit-entry">
+          <h2>Productivity Time</h2>
+          <label for="productivityTime">Duration (in hours):</label>
+          <input
+            type="number"
+            id="productivityTime"
+            name="productivityTime"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Exercise Duration -->
+        <div class="habit-entry">
+          <h2>Exercise Duration</h2>
+          <label for="exerciseDuration">Duration (in minutes):</label>
+          <input
+            type="number"
+            id="exerciseDuration"
+            name="exerciseDuration"
+            min="0"
+            required
+          /><br />
+        </div>
+        <!-- Mood Tracking -->
+        <div class="habit-entry">
+          <h2>How have you been today?</h2>
+          <label for="mood">Mood:</label>
+          <select id="mood" name="mood">
+            <option value="sad">Sad</option>
+            <option value="happy">Happy</option>
+            <option value="anxious">Anxious</option>
+            <option value="stressed">Stressed</option>
+            <option value="elated">Elated</option>
+            <option value="calm">Calm</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <!-- Link to external JavaScript file -->
+  </body>
+</html>

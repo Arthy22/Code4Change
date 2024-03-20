@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+</head>
+<style>body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cee6f2; /* Light blue */
+    color: #00008b; /* Dark blue */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.assessment-box {
+    background-color: #e3867d; /* Soft red */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #962e2a; /* Red border */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #962e2a; /* Dark red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #7f2421; /* Darker red on hover */
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Mental Health Assessment</h1>
+        <div class="assessment-box">
+            <form id="assessmentForm">
+                <div class="question">
+                    <label for="question1">Question 1: How often have you been feeling down, depressed, or hopeless today?</label><br>
+                <select id="question1" name="question1">
+                    <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>
+                    <option value="more-than-half-the-day">More than half  the day</option>
+                    <option value="nearly-all-day">Nearly all day</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="question2">Question 2: How often have you had little interest or pleasure in doing things today?</label><br>
+                <select id="question2" name="question2">
+                    <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>    
+                    <option value="more-than-half-the-day">More than half the day</option>
+                    <option value="nearly-all-day">Nearly all day</option>
+                </select>
+            </div>
+            <!-- Additional questions -->
+            <div class="question">
+                <label for="question3">Question 3: How often have you had trouble falling asleep, staying asleep, or sleeping too much in the past week?</label><br>
+                <select id="question3" name="question3">
+                    <option value="not-at-all">Not at all</option>
+                    <option value="several-days">Several days</option>
+                    <option value="more-than-half-the-days">More than half the days</option>
+                    <option value="nearly-every-day">Nearly every day</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="question4">Question 4: How often have you felt tired or had little energy today?</label><br>
+                <select id="question4" name="question4">
+                    <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="more-than-half-the-day">More than half the day</option>
+                    <option value="nearly-every-day">Nearly every day</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="question5">Question 5: How often have you had a poor appetite or overeaten in the past week?</label><br>
+                <select id="question5" name="question5">
+                    <option value="not-at-all">Not at all</option>
+                    <option value="several-days">Several days</option>
+                    <option value="more-than-half-the-days">More than half the days</option>
+                    <option value="nearly-every-day">Nearly every day</option>
+                </select>
+            </div>
+            <div class="question">
+                 <label for="question6">Question 6: How often did you feel nervous today?</label><br>
+            <select id="question6" name="question6">
+            <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>
+                    <option value="more-than-half-the-day">More than half the day</option>
+                    <option value="nearly-all-day">Nearly all day</option>
+                 </select>
+              </div>
+<div class="question">
+                 <label for="question7">Question 7: How often did you feel restless or fidgety today?</label><br>
+            <select id="question7" name="question7">
+            <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>
+                    <option value="more-than-half-the-day">More than half the day</option>
+                    <option value="nearly-all-day">Nearly all day</option>
+                 </select>
+              </div>
+              <div class="question">
+                 <label for="question8">Question 8: How often did you feel that everything was an effort today?</label><br>
+            <select id="question8" name="question8">
+            <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>
+                    <option value="more-than-half-the-day">More than half the day</option>
+                    <option value="nearly-all-day">Nearly all day</option>
+                 </select>
+              </div>
+              <div class="question">
+                 <label for="question9">Question 9: How often did you feel worthless in the past week?</label><br>
+            <select id="question9" name="question9">
+            <option value="not-at-all">Not at all</option>
+                    <option value="some-of-the-time">Some of the time</option>
+                    <option value="most-of-the-time">Most of the time</option>
+                    <option value="more-than-half-the-days">More than half the days</option>
+                    <option value="nearly-all-days">Nearly all days</option>
+                 </select>
+              </div>
+              <div class="question">
+                 <label for="question10">Question 10: Feeling bad about yourself - or that you are a failure or have let yourself or your family down</label><br>
+            <select id="question10" name="question10">
+            <option value="not-at-all">Not at all</option>
+                    <option value="several-days">Several days</option>
+                    <option value="most-of-the-days">Most of the days</option>
+                    <option value="more-than-half-the-day">More than half the days</option>
+                    <option value="nearly-all-days">Nearly all days</option>
+                 </select>
+              </div>
+                </div><br><br>
+                <button type="button" onclick="submitAssessment()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

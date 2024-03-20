@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pill Tracker for Elderly</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d3d8f5; /* Deep Periwinkle */
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #eae6ff; /* Soft Lilac */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    }
+
+    h1 {
+      text-align: center;
+      color: #333; /* Dark text */
+    }
+
+    .pill-form-box {
+      background-color: #fff; /* White background for the form box */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    }
+
+    .pill-entry {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="time"] {
+      width: calc(100% - 10px); /* Adjust width to accommodate padding */
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button[type="button"],
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #6c9; /* Aqua green */
+      color: #fff; /* White text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button[type="button"]:hover,
+    button[type="submit"]:hover {
+      background-color: #4b7; /* Darker Aqua green on hover */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Pill Tracker for Elderly</h1>
+      <div class="pill-form-box">
+        <form id="pillTrackerForm">
+          <div class="pill-entry">
+            <label for="pillName1">Pill Name:</label>
+            <input type="text" id="pillName1" name="pillName1" required /><br />
+            <label for="pillTime1">Time to Take:</label>
+            <input type="text" id="pillTime1" name="pillTime1" required /><br />
+            <label for="pillDose1">Dosage:</label>
+            <input type="text" id="pillDose1" name="pillDose1" /><br />
+          </div>
+          <!-- Additional pill entries -->
+          <div class="pill-entry">
+            <label for="pillName2">Pill Name:</label>
+            <input type="text" id="pillName2" name="pillName2" /><br />
+            <label for="pillTime2">Time to Take:</label>
+            <input type="text" id="pillTime2" name="pillTime2" /><br />
+            <label for="pillDose2">Dosage:</label>
+            <input type="text" id="pillDose2" name="pillDose2" /><br />
+          </div>
+          <!-- Add more pill entries as needed -->
+          <button type="button" onclick="addPillEntry()">
+            Add Another Pill</button
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
